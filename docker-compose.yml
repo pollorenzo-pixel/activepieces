@@ -23,6 +23,8 @@ services:
     env_file: .env
     environment:
       - AP_CONTAINER_TYPE=WORKER
+      - AP_FRONTEND_URL=http://app:80
+      - AP_WORKER_CONCURRENCY=1
     deploy:
       replicas: 1
     volumes:
