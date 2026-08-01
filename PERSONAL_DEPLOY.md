@@ -2,8 +2,7 @@
 
 This branch keeps Activepieces close to upstream and changes only what is useful for a single-person installation:
 
-- one application container
-- one worker
+- one Activepieces container running both the app and one worker
 - PostgreSQL and Redis
 - generated local secrets
 - telemetry disabled when the personal start script creates `.env`
